@@ -1,4 +1,4 @@
 # Alda
-Wordpress theme for mkmeese.com
+A new WordPress theme for mkmeese.com
 
-Beginning 9/30/2016
+Construction beginning 9/30/2016
