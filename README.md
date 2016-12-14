@@ -1,4 +1,4 @@
 # Alda
-A new WordPress theme for mkmeese.com
+A new WordPress theme for mkmeese.com based on TwentyFifteen
 
-Based on Underscores
+
