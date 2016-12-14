@@ -12,10 +12,22 @@
 /* Alda Specific styles
 ------------------------------------------------------- */
 
-h1 {color: #004200;}
+h1 {
+	color: #004200;
+}
 
-site-title {color: #004200;}
+site-title {
+	color: #004200;
+}
 
-.entry-content h3, .entry-summary h3, .page-content h3, .comment-content h3 {margin-top: 0.5em;}
+.entry-content h3, .entry-summary h3, .page-content h3, .comment-content h3 {
+	margin-top: 0.5em;
+}
 
-#footer {text-align: center;}
+#footer {
+	text-align: center;
+}
+
+.social-navigation {
+    margin: 0 25% 5%;
+}
