@@ -1,5 +1,5 @@
 /*
- Theme Name:     TwentyFifteen Alda Theme
+ Theme Name:     TwentyFifteen Alda
  Description:    Altering the main TwentyFifteen theme
  Author:         mkmeese
  Author URI:     mkmeese.com
@@ -17,3 +17,5 @@ h1 {color: #004200;}
 site-title {color: #004200;}
 
 .entry-content h3, .entry-summary h3, .page-content h3, .comment-content h3 {margin-top: 0.5em;}
+
+#footer {text-align: center;}
