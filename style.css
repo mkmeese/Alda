@@ -1,11 +1,19 @@
 /*
-Theme Name: Alda
-Theme URI: 
-Author: mkmeese
-Author URI: http://mkmeese.com
-Description: Tree based theme written for mkmeese.com
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: alda
+ Theme Name:     TwentyFifteen Alda Theme
+ Description:    Altering the main TwentyFifteen theme
+ Author:         mkmeese
+ Author URI:     mkmeese.com
+ Template:       twentyfifteen
+ Version:        1.0.0
 */
+
+@import url("../twentyfifteen/style.css");
+
+/* Alda Specific styles
+------------------------------------------------------- */
+
+h1 {color: #004200;}
+
+site-title {color: #004200;}
+
+.entry-content h3, .entry-summary h3, .page-content h3, .comment-content h3 {margin-top: 0.5em;}
