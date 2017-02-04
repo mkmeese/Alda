@@ -5,7 +5,6 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
@@ -32,21 +31,43 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-
+			
+					<!-- Header Image-->
+					<div class="headerimg">
+						<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+					</div>
+					<!-- /Header Image -->
+					
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
 					</div>
 					<!-- /logo -->
-
-					<!-- nav -->
+					
+					<!-- Site title and description -->
+					<div class="site-title">
+						<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+					</div>
+					<div class="tagline">
+						<?php bloginfo('description'); ?>
+					</div>
+					<!-- /Site title -->
+					
+					<!-- nav 1 -->
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
+					
+					<!-- nav 2- want to change theme location to extra-menu - doing widget for now -->
+					<!-- I think I need to do something like get variable theme_location them set it to extra-menu, maybe pass that back-->
+					
+					<div class="sidebar-widget">
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+					</div>
+
 
 			</header>
 			<!-- /header -->

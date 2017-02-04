@@ -83,13 +83,27 @@ input:focus {
 .header {
 
 }
+/* Header Image*/
+.headerimg{
+	
+}
+
 /* logo */
 .logo {
-
+ 
 }
 .logo-img {
+height:100px;
+}
+/* site title */
+.site-title {
 
 }
+/* Tagline */
+.tagline {
+
+}
+
 /* nav */
 .nav {
 
@@ -98,6 +112,12 @@ input:focus {
 .sidebar {
 
 }
+
+/* buttonrow */
+.buttonrow {
+
+}
+
 /* footer */
 .footer {
 

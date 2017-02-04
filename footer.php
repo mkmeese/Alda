@@ -4,10 +4,15 @@
 				<!-- copyright -->
 				<p class="copyright">
 					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'alda'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					<a href="//wordpress.org" title="WordPress">WordPress</a> and the theme <a href="https://github.com/mkmeese/mkm-alda" target="_blank">Alda.</a>
 				</p>
 				<!-- /copyright -->
-
+				
+				<!-- social nav -->
+					<div class="sidebar-widget">
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+					</div>
+				<!-- social nav-->
 			</footer>
 			<!-- /footer -->
 

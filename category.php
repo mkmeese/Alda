@@ -12,8 +12,10 @@
 
 		</section>
 		<!-- /section -->
-	</main>
 
-<?php get_sidebar(); ?>
+				<div class="sidebar-widget">
+					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
+				</div>
+	</main>
 
 <?php get_footer(); ?>

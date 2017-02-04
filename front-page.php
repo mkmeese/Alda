@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<!-- section -->
+		<!-- About section -->
 		<section>
-
-			<h1><?php the_title(); ?></h1>
+					<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -34,10 +33,27 @@
 
 		<?php endif; ?>
 
+
+			
 		</section>
 		<!-- /section -->
+				
+		<!-- Portfolio section -->
+		<section>
+					<h1><?php _e( 'Categories for ', 'alda' ); Portfolio; ?></h1>
+
+			<?php get_template_part('loop'); ?>
+
+			<?php get_template_part('pagination'); ?>
+				</section>
+		<!-- /section -->
+		
+			<div class="sidebar-widget">
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+	</div>
+		
 	</main>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>
