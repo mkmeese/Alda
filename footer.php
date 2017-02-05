@@ -1,23 +1,29 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'alda'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> and the theme <a href="https://github.com/mkmeese/mkm-alda" target="_blank">Alda.</a>
-				</p>
+				<div class="wrapper">
+					<div class="section group">
+					<!-- copyright -->
+					<div id="copy" class="col span_2_of_3">
+						<p class="copyright">&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by ', 'alda'); ?><a href="//wordpress.org" title="WordPress">WordPress</a> and the theme <a href="https://github.com/mkmeese/mkm-alda" target="_blank">Alda.</a>
+						</p>
+					</div>
+				
 				<!-- /copyright -->
 				
 				<!-- social nav -->
-					<div class="sidebar-widget">
+					<div id="soc-foot" class="col span_1_of_3">
 						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
 					</div>
+					</div>
 				<!-- social nav-->
+				
+				</div>
+				<!-- /wrapper -->
+			
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
+	
 
 		<?php wp_footer(); ?>
 

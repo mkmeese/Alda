@@ -5,6 +5,7 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
@@ -27,17 +28,11 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-			
-					<!-- Header Image-->
-					<div class="headerimg">
-						<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-					</div>
-					<!-- /Header Image -->
-					
+				<div class="wrapper">	
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -46,28 +41,20 @@
 					</div>
 					<!-- /logo -->
 					
-					<!-- Site title and description -->
+					<!-- Site title, description and social nav -->
 					<div class="site-title">
-						<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-					</div>
-					<div class="tagline">
-						<?php bloginfo('description'); ?>
+						<a href="<?php echo home_url(); ?>" id="name"><?php bloginfo('name'); ?></a>
+						<a href="<?php echo home_url(); ?>" id="tagline"><?php bloginfo('description'); ?></a>
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
 					</div>
 					<!-- /Site title -->
 					
 					<!-- nav 1 -->
-					<nav class="nav" role="navigation">
+					<nav class="nav" id="topnav" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
-					
-					<!-- nav 2- want to change theme location to extra-menu - doing widget for now -->
-					<!-- I think I need to do something like get variable theme_location them set it to extra-menu, maybe pass that back-->
-					
-					<div class="sidebar-widget">
-						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
-					</div>
 
-
+				</div>
 			</header>
 			<!-- /header -->

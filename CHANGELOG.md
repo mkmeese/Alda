@@ -10,6 +10,7 @@
 * Added widget area 1 to footer
 * Created buttonrow class
 * Added widget area 3 category.php and removed sidebar
+* Removed sidebar from single.php
 
 ##1.0.1
 

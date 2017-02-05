@@ -33,7 +33,7 @@ if (function_exists('add_theme_support'))
     ));*/
 
     //Add Support for Custom Header - Uncomment below if you're going to use
-    add_theme_support('custom-header', array(
+    /*add_theme_support('custom-header', array(
 	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
 	'header-text'			=> false,
 	'default-text-color'		=> '000',
@@ -43,11 +43,10 @@ if (function_exists('add_theme_support'))
 	'wp-head-callback'		=> $wphead_cb,
 	'admin-head-callback'		=> $adminhead_cb,
 	'admin-preview-callback'	=> $adminpreview_cb
-    ));
+    ));*/
 
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
-
 }
 
 /*------------------------------------*\
@@ -110,8 +109,8 @@ function html5blank_styles()
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('alda', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('alda'); // Enqueue it!
+   // wp_register_style('alda', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    //wp_enqueue_style('alda'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -169,7 +168,7 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 1', 'alda'),
         'description' => __('Social nav in header and footer', 'alda'),
         'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'before_widget' => '<div class="nav social">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
