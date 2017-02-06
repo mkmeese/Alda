@@ -71,6 +71,14 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
+form{
+	margin: 5px 0px;
+}
+
+article:after{
+	clear:both;
+	content:""; display:table;
+}
 
 /*------------------------------------*\
     STRUCTURE
@@ -87,11 +95,18 @@ input:focus {
 .header {
 	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
 		background-size: 100%;
+		padding-top: 2%;
+}
+
+.hfront {
+	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
+		background-size: 100%;
 		padding-top: 25%;
 }
 
+
 /* logo */
-.logo {
+.flogo {
 	float: left;
 	display: block;
 
@@ -100,6 +115,11 @@ input:focus {
 	height:150px;
 	margin: 15px;
 }
+
+.nlogo{
+	display: none;
+}
+
 /* site title */
 .site-title, .site-title {
 	margin: 15px;
@@ -207,6 +227,11 @@ input:focus {
 #soc-foot{
 	display:block;
 	float: right;
+}
+
+.thumb{
+	float: left;
+	margin: 5px 15px 5px 5px;
 }
 
 /*------------------------------------*\
@@ -380,9 +405,9 @@ a img.aligncenter {
 }
 .wp-caption .wp-caption-text,
 .gallery-caption {
-	font-size:11px;
+	font-size:16px;
 	line-height:17px;
-	margin:0;
+	margin:1px;
 	padding:0 4px 5px;
 }
 .sticky {

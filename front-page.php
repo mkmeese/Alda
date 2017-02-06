@@ -27,26 +27,26 @@
 		<!-- Portfolio section -->
 		<section>
 			<div class="portfolio">
-			<h1><a href="http://mkmeese.com/portfolio">Portfolio</a></h1>
+			<h1>A few milestone projects...</h1>
 				<div class="section group timerow">
 					<div class="col span_1_of_3">
 						<div class="yearbox"><br>2012</div>
 						<div class="timebox"><h2>Beginning a Journey</h2>
 						<h3>with the</h3>
-						<h2><a href="http://mkmeese.com/GRR">Gainesville Roller Rebels</a></h2>
+						<h2><a href="<?php echo home_url(); ?>/GRR">Gainesville Roller Rebels</a></h2>
 					</div></div>
 					<div class="col span_1_of_3">
 						<div class="yearbox"><br>2014</div>
 						<div class="timebox"><h2>Bringing it in (to the Office)</h2>
 						<h3>with the</h3>
-						<h2><a href="http://mkmeese.com/CPET">Center for Precollegiate Education and Training</a></h2>
-						<p><a href="http://mkmeese.com/portfolio">See more...</a>
+						<h2><a href="<?php echo home_url(); ?>/CPET">Center for Precollegiate Education and Training</a></h2>
+						<p><a href="<?php echo home_url(); ?>/category/portfolio">See the whole portfolio...</a>
 					</div></div>
 					<div class="col span_1_of_3">
 						<div class="yearbox"><br>2016</div>
 						<div class="timebox"><h2>Branching Out</h2>
 						<h3>with the</h3>
-						<h2><a href="http://mkmeese.com/mcnair">McNair Scholars</a></h2>						
+						<h2><a href="<?php echo home_url(); ?>/mcnair">McNair Scholars</a></h2>						
 					</div></div>
 				</div>
 			</div>

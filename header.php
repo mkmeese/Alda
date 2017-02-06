@@ -31,10 +31,16 @@
 
 
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<?php if (is_front_page()): echo('<header class="hfront clear" role="banner">'); ?>
+			<?php else: echo('<header class="header clear" role="banner">')?>
+			<?php endif; ?>
+
 				<div class="wrapper">	
+				
 					<!-- logo -->
-					<div class="logo">
+					<?php if (is_front_page()): echo('<div class="flogo">'); ?>
+					<?php else: echo('<div class="nlogo">')?>
+					<?php endif; ?>
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
