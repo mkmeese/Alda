@@ -71,7 +71,7 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="nav-menu">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
@@ -91,6 +91,7 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+		
     }
 }
 

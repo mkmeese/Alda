@@ -1,5 +1,18 @@
 ### Alda (mkmeese.com) Changelog
 
+##1.0.4 (February 6, 2017)
+* Added preload to header to make header image load faster
+* Added Font Awesome
+* Changed social nav to icons only
+* Styled link hovers
+* Blurred some edges
+* Added hamburger menu: 
+	scripts.js (add and remove toggled-on, change icon)
+	style.css
+	header.php (add button)
+	functions.php (add class nav-menu to ul)
+
+
 ##1.0.3 (February 5, 2017)
 * Removed sidebar from page, 404, archive
 * Added portfolio, timerow and content for timeline to front-page.php

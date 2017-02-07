@@ -56,9 +56,10 @@ img {
 a {
 	color:#000055;
 	text-decoration:none;
+	font-weight: 600;
 }
 a:hover {
-	text-decoration: underline;
+	color: #82c8ff;
 }
 a:focus {
 	outline:0;
@@ -96,12 +97,14 @@ article:after{
 	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 2%;
+		box-shadow: inset 0px -2px 5px #fff;
 }
 
 .hfront {
 	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 25%;
+		box-shadow: inset 0px -2px 5px #fff;
 }
 
 
@@ -111,7 +114,7 @@ article:after{
 	display: block;
 
 }
-.logo-img {
+#logo-img {
 	height:150px;
 	margin: 15px;
 }
@@ -121,15 +124,16 @@ article:after{
 }
 
 /* site title */
-.site-title, .site-title {
+.site-title {
 	margin: 15px;
+	padding-top: 20px;
 	color: white;
 	font-family: 'Noto Serif', serif;
 	text-shadow: 2px 2px 4px #41281e;
 }
 
 /* My Name in header*/
-#name, #name a{
+#name {
 	margin: 5px;
 	color: white;
 	font-size: 2em;
@@ -137,11 +141,15 @@ article:after{
 }
 
 /* Tagline */
-#tagline, #tagline a {
+#tagline {
 	margin: 5px;
 	color: white;
 	font-size: 1.5em;
 	display: block;
+}
+
+#name:hover, #tagline:hover {
+	color: #82c8ff;
 }
 
 /* nav */
@@ -154,12 +162,27 @@ article:after{
 }
 
 /* Social nav */
-.social li {
+.social ul li {
 	list-style: none;
 	float: left;
     position: relative;
     margin: 0px 5px;
 	font-size: 1.5em;
+}
+
+.social ul li a{
+	display: inline-block;
+    position: relative;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+	margin: 0 0 0 5px;
+    text-align: center;
+    text-decoration: none!important;
+}
+
+.social ul li a:hover {
+	color: #82c8ff;
 }
 
 /* Top nav */
@@ -173,12 +196,9 @@ article:after{
 	text-shadow: 2px 2px 4px #41281e;
 }
 
-
-
-/* portfolio */
-.portfolio {
-
-}
+	.menu-toggle {
+		display: none;
+	}
 
 /* timeline row container */
 .timerow{
@@ -196,6 +216,8 @@ article:after{
 	color: white;
 	margin: auto;
 	text-shadow: 2px 2px 4px #41281e;
+	font-weight: 800;
+	box-shadow: 0px 0px 5px #004200;
 }
 
 .timebox{
@@ -211,6 +233,7 @@ article:after{
 /* footer */
 .footer {
 	background-color: #41281e;
+	box-shadow: 0px -3px 5px #41281e;
 }
 
 /* Copyright info in footer*/
@@ -220,7 +243,12 @@ article:after{
 
 #copy a{
 	color: white;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#copy a:hover {
+	color: #82c8ff;
 }
 
 /* Social nav in footer */
@@ -306,16 +334,44 @@ article:after{
 	
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:1100px) {
+	
+	.flogo {
+		display: none;
+	}
+	
+	.site-title{
+		padding-top: 5px;
+	}
+	
+/*----Hamburger Menu---------------*/
+	.menu-toggle {
+		display: block;
+		float: right;
+		margin-right: 5px;
+		color: #000055;
+	}
+	
+	#topnav ul{
+		display: none;
+	}
+	
+	#topnav ul.toggled-on{
+		display: block;
+		padding-left: 5px;
+	}
+	
+	#topnav ul.toggled-on li {
+		display: block;
+		margin: 0 auto;
+		background-color: #004200;
+		width: 100%;
+		text-align: center;
 
-}
-@media only screen and (min-width:1024px) {
-
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
+	}
+	#topnav ul.toggled-on li:after{
+		clear: both;
+	}
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
