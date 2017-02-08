@@ -9,7 +9,7 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome/css/font-awesome.min.css">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -21,26 +21,16 @@
 		<meta property="og:url" content="<?php echo home_url(); ?>">
 
 		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
 
 	</head>
 	<body <?php body_class(); ?>>
-
-		<!-- wrapper -->
-
 
 			<!-- header -->
 			<?php if (is_front_page()): echo('<header class="hfront clear" role="banner">'); ?>
 			<?php else: echo('<header class="header clear" role="banner">')?>
 			<?php endif; ?>
-
+			
+				<!-- wrapper -->
 				<div class="wrapper">	
 				
 					<!-- logo -->
@@ -70,5 +60,4 @@
 
 				</div>
 			</header>
-
 			<!-- /header -->

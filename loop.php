@@ -17,14 +17,13 @@
 		</h2>
 		<!-- /post title -->
 
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?></div>
+		<?php html5wp_excerpt('html5wp_index'); ?></div>
 
 	</article>
 	<!-- /article -->
 	<hr>
 
 <?php endwhile; ?>
-
 <?php else: ?>
 
 	<!-- article -->

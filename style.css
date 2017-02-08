@@ -29,13 +29,14 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:400 16px/1.6 'Noto Sans', sans-serif;
+	font:400 16px/1.6 'Open Sans', sans-serif;
 	color:#41281e;
 }
 
 h1, h2, h3, h1 a, h2 a, h3 a {
 	color:#004200;
 }
+
 /* clear */
 .clear:before,
 .clear:after {
@@ -81,6 +82,15 @@ article:after{
 	content:""; display:table;
 }
 
+button{
+	background-color: white;
+	border-radius: 5px;
+}
+
+button:hover{
+	color: #82c8ff;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -107,12 +117,10 @@ article:after{
 		box-shadow: inset 0px -2px 5px #fff;
 }
 
-
 /* logo */
 .flogo {
 	float: left;
 	display: block;
-
 }
 #logo-img {
 	height:150px;
@@ -125,10 +133,10 @@ article:after{
 
 /* site title */
 .site-title {
-	margin: 15px;
+	margin: 15px 15px 10px 0px;
 	padding-top: 20px;
 	color: white;
-	font-family: 'Noto Serif', serif;
+	font-family: 'Playfair Display', serif;
 	text-shadow: 2px 2px 4px #41281e;
 }
 
@@ -142,22 +150,23 @@ article:after{
 
 /* Tagline */
 #tagline {
-	margin: 5px;
+	margin: 5px 5px 0px 5px;
 	color: white;
 	font-size: 1.5em;
 	display: block;
 }
 
-#name:hover, #tagline:hover {
+#name:hover, 
+#tagline:hover {
 	color: #82c8ff;
 }
 
 /* nav */
-.nav, .nav ul li a{
+.nav ul li a{
 	color: white;
 	display: block;
 }
-.nav, .nav ul li a:hover{
+.nav ul li a:hover{
 	text-decoration: underline;
 }
 
@@ -166,7 +175,7 @@ article:after{
 	list-style: none;
 	float: left;
     position: relative;
-    margin: 0px 5px;
+    margin: -10px 5px 1px 0px;
 	font-size: 1.5em;
 }
 
@@ -196,21 +205,26 @@ article:after{
 	text-shadow: 2px 2px 4px #41281e;
 }
 
-	.menu-toggle {
-		display: none;
-	}
+.menu-toggle {
+	display: none;
+}
 
 /* timeline row container */
 .timerow{
 	border:none; 
     background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/branches.svg') no-repeat; 
 	background-size: 100%;
+	text-align: center;
 }
-/* timeline row container */
+
+.timerow h2, 
+.timerow h3{
+	margin: .33em 0;
+}
+
 .yearbox{
     background-color: #004200;
-    text-align: center;
-    border-radius: 25px;
+    border-radius: 30px;
     height: 75px;
     width: 75px;
 	color: white;
@@ -220,14 +234,20 @@ article:after{
 	box-shadow: 0px 0px 5px #004200;
 }
 
-.timebox{
+.yearbox:hover{
+	    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.skillbox{
 	text-align: center;
 }
 
-
-/* Container for row of three buttons */
-.buttonrow {
-
+.skillbox i:hover{
+	    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 /* footer */
@@ -262,24 +282,27 @@ article:after{
 	margin: 5px 15px 5px 5px;
 }
 
-/*------------------------------------*\
-    PAGES
-\*------------------------------------*/
+/*Contact form styling*/
 
+input, textarea, select {
+    width: 100%;
+	border: 1px solid #000055;
+    border-radius: 5px;
+	padding: 5px 1px;
+}
 
-
-/*------------------------------------*\
-    IMAGES
-\*------------------------------------*/
-
-
-
+input[type=submit] {
+    background-color: #000055;
+    color: white;
+}
+input[type=submit]:hover{
+	background-color: #82c8ff;
+}
 /*  SECTIONS  */
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
-
 }
 
 /*  COLUMN SETUP  */
@@ -288,6 +311,7 @@ article:after{
 	float:left;
 	margin: 1% 0 1% 2.4%;
 }
+
 .col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
@@ -301,35 +325,44 @@ article:after{
 .span_2_of_3 { width: 65.86%; }
 .span_1_of_3 { width: 31.73%; }
 
+/*  GRID OF TWO  */
+.span_2_of_2 { width: 100%; }
+.span_1_of_2 { width: 45%; }
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2, .span_2_of_2 { width: 100%; }
 }
 
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
 
-@media only screen and (min-width:320px) {
 
-}
-
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:700px) {
 .header {
 	background-image: none;
 	background-color: #004200;
 	height: 150px;
 	padding-top: 5px;
 }
-#tagline, #tagline a {
-	display: none;}
-#name, #name a {
+
+#tagline, 
+#tagline a {
+	display: none;
+}
+
+#name, 
+#name a {
 	font-size: 1.5em;
 }	
 
 .timerow{
 	background-image: none;
+}
+.timerow a{
+	text-decoration: underline;
 }
 	
 }
@@ -367,16 +400,11 @@ article:after{
 		background-color: #004200;
 		width: 100%;
 		text-align: center;
-
 	}
+	
 	#topnav ul.toggled-on li:after{
 		clear: both;
 	}
-
-}
-@media only screen and (-webkit-min-device-pixel-ratio:1.5),
-	   only screen and (min-resolution:144dpi) {
-
 }
 
 /*------------------------------------*\
@@ -465,12 +493,6 @@ a img.aligncenter {
 	line-height:17px;
 	margin:1px;
 	padding:0 4px 5px;
-}
-.sticky {
-
-}
-.bypostauthor {
-
 }
 
 /*------------------------------------*\

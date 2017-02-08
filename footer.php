@@ -7,24 +7,21 @@
 						<p class="copyright">&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by ', 'alda'); ?><a href="//wordpress.org" title="WordPress">WordPress</a> and the theme <a href="https://github.com/mkmeese/mkm-alda" target="_blank">Alda.</a>
 						</p>
 					</div>
-				
 				<!-- /copyright -->
 				
 				<!-- social nav -->
-					<div id="soc-foot" class="col span_1_of_3">
+						<div id="soc-foot" class="col span_1_of_3">
 						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
-					</div>
-					</div>
+						</div>
+					
 				<!-- social nav-->
-				
+					</div>
 				</div>
 				<!-- /wrapper -->
 			
 			</footer>
 			<!-- /footer -->
-
-	
-
+			
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->

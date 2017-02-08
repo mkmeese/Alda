@@ -3,11 +3,10 @@
 	<main role="main">
 		<!-- About section -->
 		<section>
-					<h1><?php the_title(); ?></h1>
+		<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
@@ -15,18 +14,13 @@
 				<br class="clear">
 
 			</article>
-			<!-- /article -->
 
-		<?php endwhile; ?>
-
-		<?php else: ?><?php endif; ?>
-	
+		<?php endwhile; ?><?php else: ?><?php endif; ?>
 		</section>
 		<!-- /About section -->
 
-		<!-- Portfolio section -->
+		<!-- Timeline section -->
 		<section>
-			<div class="portfolio">
 			<h1>A few milestone projects...</h1>
 				<div class="section group timerow">
 					<div class="col span_1_of_3">
@@ -40,7 +34,6 @@
 						<div class="timebox"><h2>Bringing it in (to the Office)</h2>
 						<h3>with the</h3>
 						<h2><a href="<?php echo home_url(); ?>/CPET">Center for Precollegiate Education and Training</a></h2>
-						<p><a href="<?php echo home_url(); ?>/category/portfolio">See the whole portfolio...</a>
 					</div></div>
 					<div class="col span_1_of_3">
 						<div class="yearbox"><br>2016</div>
@@ -48,10 +41,10 @@
 						<h3>with the</h3>
 						<h2><a href="<?php echo home_url(); ?>/mcnair">McNair Scholars</a></h2>						
 					</div></div>
+					<div class="col span_3_of_3"><a href="<?php echo home_url(); ?>/category/portfolio">See the whole portfolio...</a></div>
 				</div>
-			</div>
 		</section>
-		<!-- /section -->
+		<!-- /Timeline section -->
 		
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>

@@ -13,9 +13,6 @@
 		</section>
 		<!-- /section -->
 
-				<div class="sidebar-widget">
-					<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
-				</div>
 	</main>
 </div>
 <?php get_footer(); ?>

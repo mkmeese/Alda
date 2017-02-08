@@ -1,5 +1,14 @@
 ### Alda (mkmeese.com) Changelog
 
+##1.0.5 (February 7, 2017)
+* Added two column grid to stylesheet
+* Styled non-link hovers
+* Style edits on timeline
+* Crafted Contact form, contactme.php
+* Styled contact form
+* Updated fonts
+* Cleaning up code - removing white space, unnecessary code
+
 ##1.0.4 (February 6, 2017)
 * Added preload to header to make header image load faster
 * Added Font Awesome

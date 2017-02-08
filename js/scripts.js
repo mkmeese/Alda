@@ -3,12 +3,7 @@
 	$(function () {
 		
 		'use strict';
-		
-	// DOM ready, take it away
-	
-	//Change Year from white to yellow on hover
-	//$(".yearbox").hover(function(){$(this).css("color", "#ffffcc")},function(){$(this).css("color", "white")});
-	
+
 	//Hamburger Menu
 	var nav = document.getElementById( 'topnav' ), button, menu;
 	if ( ! nav ) {
@@ -26,6 +21,7 @@
 		button.style.display = 'none';
 		return;
 	}
+	
 	//Adds and removes toggled-on class, as well as changes icon between x and bars
 	button.onclick = function() {
 		if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
@@ -42,9 +38,7 @@
 			menu.className += ' toggled-on';
 		}
 	};
-
 	
-		
 	});
 	
 })(jQuery, this);
