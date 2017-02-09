@@ -1,5 +1,8 @@
 ### Alda (mkmeese.com) Changelog
 
+##1.0.6 (February 8, 2017)
+* Styled loop dividers
+
 ##1.0.5 (February 7, 2017)
 * Added two column grid to stylesheet
 * Styled non-link hovers

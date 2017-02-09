@@ -3,6 +3,12 @@
 	$(function () {
 		
 		'use strict';
+		
+	// Remove last divider
+	//	var divider = document.getElementsByClassName('divider');
+	//	var len = divider.length -1;
+	//	divider[len].innerHTML=' ';
+	
 
 	//Hamburger Menu
 	var nav = document.getElementById( 'topnav' ), button, menu;

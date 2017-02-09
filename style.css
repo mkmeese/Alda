@@ -1,7 +1,7 @@
 /*
 	Theme Name: Alda
-	Theme URI: TBA
-	Description: WordPress Theme based on HTML5 Blank
+	Theme URI: https://github.com/mkmeese/mkm-alda
+	Description: A new WordPress theme for mkmeese.com based on HTML5 Blank and crafted to shine with the glow of morning sunlight sifting through the leaves of an old majestic tree. Alda is the Elvish (Quenya) word for tree, as well as the Tengwar letter most closely resembling the letter "M".
 	Version: 1.0
 	Author: mkmeese
 	Author URI: http://mkmeese.com
@@ -104,14 +104,14 @@ button:hover{
 }
 /* header */
 .header {
-	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
+	    background:url('./img/headers/default.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 2%;
 		box-shadow: inset 0px -2px 5px #fff;
 }
 
 .hfront {
-	    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/headers/default.jpg') no-repeat center top; 
+	    background:url('./img/headers/default.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 25%;
 		box-shadow: inset 0px -2px 5px #fff;
@@ -212,7 +212,7 @@ button:hover{
 /* timeline row container */
 .timerow{
 	border:none; 
-    background:url('http://dev.mkmeese.com/wp-content/themes/mkm-alda/img/branches.svg') no-repeat; 
+    background:url('./img/branches.svg') no-repeat; 
 	background-size: 100%;
 	text-align: center;
 }
@@ -229,9 +229,11 @@ button:hover{
     width: 75px;
 	color: white;
 	margin: auto;
-	text-shadow: 2px 2px 4px #41281e;
+	text-shadow: 2px 2px 4px #41281e, -2px -2px 4px #41281e;
 	font-weight: 800;
-	box-shadow: 0px 0px 5px #004200;
+	background-image: url("./img/cropped_sun.svg");
+	background-size: contain;
+	background-position: center;
 }
 
 .yearbox:hover{
@@ -277,6 +279,10 @@ button:hover{
 	float: right;
 }
 
+#soc-foot .menu {
+	margin-left: 40%;
+}
+
 .thumb{
 	float: left;
 	margin: 5px 15px 5px 5px;
@@ -298,6 +304,7 @@ input[type=submit] {
 input[type=submit]:hover{
 	background-color: #82c8ff;
 }
+
 /*  SECTIONS  */
 .section {
 	clear: both;
@@ -333,6 +340,61 @@ input[type=submit]:hover{
 @media only screen and (max-width: 700px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2, .span_2_of_2 { width: 100%; }
+}
+
+/*--Double Line with leaf icon from Magee Shortcodes--*/
+.divider.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;	
+}
+	
+.divider {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.divider-inner {
+    width: 100%;
+    max-width: 100%!important;
+    display: table;
+    min-height: 1px;
+}
+
+.divider .divider-border {
+    border-bottom-width: 1px;
+    border-color: #41281e;
+}
+
+.divider-inner-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.divider .double-line.divider-inner-item .divider-inner {
+    border-top-width: 1px;
+}
+
+.divider-border.double-line .divider-inner {
+height: 8px;}
+	
+.divider-border .divider-inner {
+	border: 0 solid #41281e;
+    border-bottom-width: 1px;
+    height: 1px;
+}
+
+.divider-inner-icon {
+    width: 40px;
+    height: 40px;
+	color: #41281e;
+}
+
+.divider-inner-item {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /*------------------------------------*\

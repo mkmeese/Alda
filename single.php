@@ -17,7 +17,7 @@
 
 			<?php the_tags( __( 'Tags: ', 'alda' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-			<p><?php _e( 'Categorised in: ', 'alda' ); the_category(', '); // Separated by commas ?></p>
+			<p><?php _e( 'Back to my ', 'alda' ); the_category(', '); // Separated by commas ?></p>
 
 		</article>
 		<!-- /article -->

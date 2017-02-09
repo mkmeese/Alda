@@ -21,7 +21,15 @@
 
 	</article>
 	<!-- /article -->
-	<hr>
+	<div class=" divider divider-icon center center">
+	<div class="divider-inner">
+		<div class="divider-inner-item divider-border double-line">
+			<div class="divider-inner"></div></div>
+		<div class="divider-inner-item divider-inner-icon"><i class="fa fa-pagelines"></i></div>
+		<div class="divider-inner-item divider-border double-line">
+			<div class="divider-inner"></div></div>
+	</div>
+</div>
 
 <?php endwhile; ?>
 <?php else: ?>

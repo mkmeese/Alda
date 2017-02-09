@@ -10,7 +10,7 @@ $fullsubject =  $subject." from ".$user_email;
 mail("webmaster@mkmeese.com", $fullsubject, $message);
 
 // Redirection to the success page
-header("Location:http://dev.mkmeese.com/thanks");
+header("Location:/thanks");
 
 //Strip out space, slashes and special characters
 function test_input($data) {
