@@ -337,11 +337,6 @@ input[type=submit]:hover{
 .span_2_of_2 { width: 100%; }
 .span_1_of_2 { width: 45%; }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 700px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3, .span_1_of_2, .span_2_of_2 { width: 100%; }
-}
 
 /*--Double Line with leaf icon from Magee Shortcodes--*/
 .divider.center {
@@ -404,12 +399,6 @@ height: 8px;}
 
 
 @media only screen and (max-width:700px) {
-.header {
-	background-image: none;
-	background-color: #004200;
-	height: 150px;
-	padding-top: 5px;
-}
 
 #tagline, 
 #tagline a {
@@ -432,6 +421,18 @@ height: 8px;}
 #gallery-2 .gallery-item,
 #gallery-3 .gallery-item{
     width: 100% !important;
+}
+
+.col {  
+	margin: 1% 0 1% 0%; 
+}
+
+.span_3_of_3, 
+.span_2_of_3, 
+.span_1_of_3, 
+.span_1_of_2, 
+.span_2_of_2 { 
+	width: 100%; 
 }
 	
 }

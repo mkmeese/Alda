@@ -1,5 +1,8 @@
 ### Alda (mkmeese.com) Changelog
 
+##1.0.7 (February 9, 2017)
+* Changed header to always be image
+
 ##1.0.6 (February 8, 2017)
 * Styled loop dividers
 * Changed URLs to be relative, style.css, contactme.php
