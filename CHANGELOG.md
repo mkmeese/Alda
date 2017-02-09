@@ -2,6 +2,9 @@
 
 ##1.0.6 (February 8, 2017)
 * Styled loop dividers
+* Changed URLs to be relative, style.css, contactme.php
+* Updated footer
+* Added custom Screenshot size
 
 ##1.0.5 (February 7, 2017)
 * Added two column grid to stylesheet

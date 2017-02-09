@@ -1,7 +1,7 @@
 /*
 	Theme Name: Alda
 	Theme URI: https://github.com/mkmeese/mkm-alda
-	Description: A new WordPress theme for mkmeese.com based on HTML5 Blank and crafted to shine with the glow of morning sunlight sifting through the leaves of an old majestic tree. Alda is the Elvish (Quenya) word for tree, as well as the Tengwar letter most closely resembling the letter "M".
+	Description: A new WordPress theme crafted to glow like morning sunlight sifting through the leaves of an ancient majestic tree. Alda is the Elvish (Quenya) word for tree, as well as a letter in the Tengwar alphabet.
 	Version: 1.0
 	Author: mkmeese
 	Author URI: http://mkmeese.com
@@ -104,14 +104,14 @@ button:hover{
 }
 /* header */
 .header {
-	    background:url('./img/headers/default.jpg') no-repeat center top; 
+	    background:url('./img/header.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 2%;
 		box-shadow: inset 0px -2px 5px #fff;
 }
 
 .hfront {
-	    background:url('./img/headers/default.jpg') no-repeat center top; 
+	    background:url('./img/header.jpg') no-repeat center top; 
 		background-size: 100%;
 		padding-top: 25%;
 		box-shadow: inset 0px -2px 5px #fff;
@@ -254,8 +254,9 @@ button:hover{
 
 /* footer */
 .footer {
-	background-color: #41281e;
 	box-shadow: 0px -3px 5px #41281e;
+	background:url('./img/footer.jpg') repeat-y center top; 
+	background-size: 100%;
 }
 
 /* Copyright info in footer*/
@@ -425,6 +426,12 @@ height: 8px;}
 }
 .timerow a{
 	text-decoration: underline;
+}
+
+#gallery-1 .gallery-item, 
+#gallery-2 .gallery-item,
+#gallery-3 .gallery-item{
+    width: 100% !important;
 }
 	
 }
